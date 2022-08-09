@@ -1,3 +1,6 @@
 # SteamMOD-Magic-Chinese-Food
-- 在饥荒联机版中添加更多中国特色食物的MOD
-- 开发中，预计上线Steam平台ß
+- MOD for Don't Starve Together
+- 在菜谱中添加更多中国特色食物
+- Adding more traditional chinese recipes in Don't Starve Together, most of which are expected to be super-powerful.
+- 开发中，完成后将上传Steam Community
+- Developing...
