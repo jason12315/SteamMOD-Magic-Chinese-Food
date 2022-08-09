@@ -1,9 +1,9 @@
 -- 名称
-name = "More chinese food"
+name = "Magic Chinese Food"
 -- 描述
-description = "更多中餐"
+description = "More powerful Chinese recipes 更多魔法中餐"
 -- 作者
-author = "JasonWu"
+author = "JasonWu && JaneChen"
 -- 版本
 version = "0.1"
 -- klei官方论坛地址，为空则默认是工坊的地址
