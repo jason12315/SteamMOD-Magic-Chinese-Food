@@ -1,4 +1,6 @@
 -- reference: preparedfoods.lua
+
+require "./languages/chs"
 local gongbaochicken = {
   test = function(cooker, names, tags)
       return tags.meat and names.pepper and names.honey and names.nightmarefuel --and not tags.inedible and not tags.egg 
@@ -11,13 +13,14 @@ local gongbaochicken = {
   hunger = TUNING.CALORIES_SMALL,
   sanity = 150,
   perishtime = TUNING.PERISH_FAST,
-  cooktime = 2,
+  cooktime = 0, --BUG
   potlevel = "high",
-  cookbook_tex = "images/gbjd64.tex", 
-  cookbook_atlas = "images/gbjd64.xml",
+  cookbook_tex = "./images/gongbaochicken.tex", 
+  cookbook_atlas = "./images/gongbaochicken.xml", 
+  -- working directory is main directory
   cookbook_category = "cookpot",
   tags = {"honeyed"},
-        floater = {"med", nil, 0.65}
+        floater = {"med", nil, 0.55}
 }
 
 -- #TODO add more foods
