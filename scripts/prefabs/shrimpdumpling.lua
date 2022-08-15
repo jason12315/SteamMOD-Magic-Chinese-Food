@@ -1,8 +1,9 @@
 local assets =
 {
-    Asset("ANIM", "anim/gongbaochicken.zip"), 
-    Asset("ATLAS", "images/gongbaochicken.xml")
+    Asset("ANIM", "anim/shrimpdumpling.zip"), 
+    Asset("ATLAS", "images/shrimpdumpling.xml")
 }
+
 
 function fn()
     local inst = CreateEntity()
@@ -13,8 +14,8 @@ function fn()
 
     MakeInventoryPhysics(inst)
 
-    inst.AnimState:SetBank("gongbaochicken")
-    inst.AnimState:SetBuild("gongbaochicken")
+    inst.AnimState:SetBank("shrimpdumpling")
+    inst.AnimState:SetBuild("shrimpdumpling")
     inst.AnimState:PlayAnimation("idle") 
 
     --MakeInventoryFloatable(inst)
@@ -27,7 +28,7 @@ function fn()
     inst:AddComponent("inspectable")
     
     inst:AddComponent("inventoryitem")
-    inst.components.inventoryitem.atlasname = "images/gongbaochicken.xml"
+    inst.components.inventoryitem.atlasname = "images/shrimpdumpling.xml"
 
     inst:AddComponent("edible")
     inst.components.edible.foodtype = FOODTYPE.MEAT
@@ -49,4 +50,4 @@ function fn()
     return inst
 end
 
-return Prefab("gongbaochicken", fn, assets)
+return Prefab("shrimpdumpling", fn, assets)

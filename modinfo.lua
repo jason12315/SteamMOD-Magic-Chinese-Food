@@ -1,6 +1,6 @@
-name = "Magic Chinese Food"
-description = "More powerful Chinese recipes 更多魔法中餐"
-author = "JasonWu && JaneChen"
+name = "膜法中餐 Magic Chinese Food"
+description = "More powerful Chinese recipes"
+author = "JasonWu && Gong"
 
 dst_compatible = true
 client_only_mod = false

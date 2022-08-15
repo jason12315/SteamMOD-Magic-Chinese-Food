@@ -1,6 +1,8 @@
 -- reference: preparedfoods.lua
 
 require "./languages/chs"
+PrefabFiles = {"gongbaochicken"} -- , "hotnsoursoup", "pepperchicken", "wavypotatoes"}
+-- 
 local gongbaochicken = {
   test = function(cooker, names, tags)
       return tags.meat and names.pepper and names.honey and names.nightmarefuel --and not tags.inedible and not tags.egg 
@@ -13,10 +15,10 @@ local gongbaochicken = {
   hunger = TUNING.CALORIES_SMALL,
   sanity = 150,
   perishtime = TUNING.PERISH_FAST,
-  cooktime = 0, --BUG
+  cooktime = 0, --DEBUG USE
   potlevel = "high",
-  cookbook_tex = "./images/gongbaochicken.tex", 
-  cookbook_atlas = "./images/gongbaochicken.xml", 
+  cookbook_tex = "gongbaochicken.tex", 
+  cookbook_atlas = "images/gongbaochicken.xml", 
   -- working directory is main directory
   cookbook_category = "cookpot",
   tags = {"honeyed"},
@@ -28,4 +30,3 @@ local gongbaochicken = {
 AddCookerRecipe("cookpot", gongbaochicken)
 AddCookerRecipe("portablecookpot", gongbaochicken)
 
-PrefabFiles = {"gongbaochicken"}
